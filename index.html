@@ -18,33 +18,34 @@
       rel="stylesheet"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Студія</title>
   </head>
   <body>
     <!-- Шапка сторінки -->
     <header class="header">
-      <div class="container header-container">
-        <nav class="nav">
-          <a lang="en" href="./index.html" class="logo">Web<span class="accent">Studio</span></a>
-          <ul class="header-nav">
-            <li class="header-nav-list"><a href="./index.html" class="link current">Студія</a></li>
-            <li class="header-nav-list"><a href="./portfolio.html" class="link">Портфоліо</a></li>
-            <li class="header-nav-list"><a href="#footer" class="link">Контакти</a></li>
+      <div class="container header__container">
+        <nav class="nav header__nav">
+          <a lang="en" href="./index.html" class="logo header__logo">Web<span class="logo__accent">Studio</span></a>
+          <ul class="menu header__menu">
+            <li class="menu__iteam"><a href="./index.html" class="menu__link menu__link--current">Студія</a></li>
+            <li class="menu__iteam"><a href="./portfolio.html" class="menu__link">Портфоліо</a></li>
+            <li class="menu__iteam"><a href="#footer" class="menu__link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="header-list">
-          <li>
-            <a href="mail:info@devstudio.com" class="link">
-              <svg class="icon-phone-envelope" width="16px" height="12px">
+        <ul class="contacts header__contacts">
+          <li class="contacts__iteam">
+            <a href="mail:info@devstudio.com" class="contacts__link">
+              <svg class="contacts__icon" width="16px" height="12px">
                 <use href="./imges/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li>
-            <a href="tel:+380961111111" class="link">
-              <svg class="icon-phone-envelope" width="10px" height="16px">
+          <li class="contacts__iteam">
+            <a href="tel:+380961111111" class="contacts__link">
+              <svg class="contacts__icon" width="10px" height="16px">
                 <use href="./imges/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -54,56 +55,56 @@
       </div>
     </header>
     <!-- Унікальний контент сторінки -->
-    <main>
-      <section class="hero">
+    <main class="main">
+      <section class="hero main__hero">
         <div class="container" data-modal-open>
-          <h1 class="hero-title" data-aos="flip-right">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-bn">Замовити послугу</button>
+          <h1 class="hero__title" data-aos="flip-right">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="bn hero__bn">Замовити послугу</button>
         </div>
       </section>
-      <section class="features">
+      <section class="features main__features">
         <div class="container">
-          <h2 class="features-title hidden">Особливості</h2>
-          <ul class="feature-list">
-            <li class="feature-item">
-              <div class="item-box">
-                <svg class="icon-feature" width="65.32px" height="70px">
+          <h2 class="features__title features__title--hidden">Особливості</h2>
+          <ul class="features__list">
+            <li class="features__item">
+              <div class="features__box">
+                <svg class="features__icon" width="65.32px" height="70px">
                   <use href="./imges/symbol-defs.svg#icon-vectors"></use>
                 </svg>
               </div>
-              <h3 class="feature-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="text">
+              <h3 class="features__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="text feature__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
-            <li class="feature-item">
-              <div class="item-box">
-                <svg class="icon-feature" width="65.32px" height="70px">
+            <li class="features__item">
+              <div class="features__box">
+                <svg class="features__icon" width="65.32px" height="70px">
                   <use href="./imges/symbol-defs.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="feature-title">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="text">
+              <h3 class="features__title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="text feature__text">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
-            <li class="feature-item">
-              <div class="item-box">
-                <svg class="icon-feature" width="65.32px" height="70px">
+            <li class="features__item">
+              <div class="features__box">
+                <svg class="features__icon" width="65.32px" height="70px">
                   <use href="./imges/symbol-defs.svg#icon-computer"></use>
                 </svg>
               </div>
-              <h3 class="feature-title">ПЛАНУВАННЯ</h3>
-              <p class="text">Так само консультація з широким активом значною мірою зумовлює.</p>
+              <h3 class="features__title">ПЛАНУВАННЯ</h3>
+              <p class="text feature__text">Так само консультація з широким активом значною мірою зумовлює.</p>
             </li>
-            <li class="feature-item">
-              <div class="item-box">
-                <svg class="icon-feature" width="65.32px" height="70px">
+            <li class="features__item">
+              <div class="features__box">
+                <svg class="features__icon" width="65.32px" height="70px">
                   <use href="./imges/symbol-defs.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="feature-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="text">
+              <h3 class="features__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="text feature__text">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
             </li>
@@ -352,78 +353,78 @@
     </main>
     <!-- Підвал сторінки -->
     <footer id="footer" class="footer">
-      <div class="container footer-flex">
-        <div class="footer-address">
-          <a lang="en" href="/index.html" class="logo footer-logo"
-            >Web<span class="accent footer-accent">Studio</span></a
+      <div class="container footer__box">
+        <div class="footer__information">
+          <a lang="en" href="/index.html" class="logo footer__logo"
+            >Web<span class="footer__accent">Studio</span></a
           >
-          <address class="footer-box">
-            <ul class="footer-list">
-              <li class="footer-item">
+          <address class="footer__address">
+            <ul class="footer__list">
+              <li class="footer__item">
                 <a
-                  class="map"
+                  class="footer__map"
                   href="https://goo.gl/maps/xNe1UYbnAimfx9WL7"
                   target="_blank"
                   rel="noopener noreferrer"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
-              <li class="footer-item">
-                <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li class="footer__item">
+                <a class="footer__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
               </li>
-              <li class="footer-item">
-                <a class="link tell" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="footer__item">
+                <a class="footer__link" href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-icon">
-          <p class="footer-text">приєднуйтесь</p>
-          <ul class="icon-footer-list">
-            <li class="icon-soc-item">
-              <a class="icon-soc-footer" href="#"
-                ><svg class="icon-footer" width="20px" height="20px">
+        <div class="footer-network">
+          <p class="footer__text">приєднуйтесь</p>
+          <ul class="footer-soc footer__icons">
+            <li class="footer-soc__iteam">
+              <a class="footer-soc__link" href="#"
+                ><svg class="footer-soc__icon" width="20px" height="20px">
                   <use href="./imges/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="icon-soc-item">
-              <a class="icon-soc-footer" href="#"
-                ><svg class="icon-footer" width="20px" height="20px">
+            <li class="footer-soc__iteam">
+              <a class="footer-soc__link" href="#"
+                ><svg class="footer-soc__icon" width="20px" height="20px">
                   <use href="./imges/symbol-defs.svg#icon-Group"></use>
                 </svg>
               </a>
             </li>
-            <li class="icon-soc-item">
-              <a class="icon-soc-footer" href="#"
-                ><svg class="icon-footer" width="20px" height="20px">
+            <li class="footer-soc__iteam">
+              <a class="footer-soc__link" href="#"
+                ><svg class="footer-soc__icon" width="20px" height="20px">
                   <use href="./imges/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="icon-soc-item">
-              <a class="icon-soc-footer" href="#"
-                ><svg class="icon-footer" width="20px" height="20px">
+            <li class="footer-soc__iteam">
+              <a class="footer-soc__link" href="#"
+                ><svg class="footer-soc__icon" width="20px" height="20px">
                   <use href="./imges/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-          <form class="footer-field">
-            <div class="field-email">
-              <label for="user-email" class="footer-label"> Підпишіться на розсилку </label>
+          <form class="footer__field">
+            <div class="field__email">
+              <p class="footer__label"> Підпишіться на розсилку </p>
               <input
                 type="email"
                 name="footer-email"
                 id="user-email"
-                class="footer-input"
+                class="footer__input"
                 placeholder="E-mail"
               />
             </div>
-            <button type="submit" class="footer-submit">
+            <button type="submit" class="bn footer__submit">
               Підписатися
-              <svg class="icon-sign" width="24px" height="24px">
+              <svg class="icon__sign" width="24px" height="24px">
                 <use href="./imges/symbol-defs.svg#icon-icon-send"></use>
               </svg>
             </button>
@@ -477,7 +478,7 @@
               <span><a href="#" class="checkbox-link">Умови договору</a></spa>
             </label>
           </div>
-          <button type="submit" class="form-submit">Відправити</button>
+          <button type="submit" class="bn form-submit">Відправити</button>
         </form>
       </div>
     </div>
