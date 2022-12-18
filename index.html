@@ -27,6 +27,31 @@
     <header class="header">
       <div class="container header__container">
         <a lang="en" href="./index.html" class="logo header__logo">Web<span class="logo__accent">Studio</span></a>
+        <nav class="header__nav">
+          <ul class="menu header__menu">
+              <li class="menu__iteam"><a href="./index.html" class="menu__link menu__link--current">Студія</a></li>
+              <li class="menu__iteam"><a href="./portfolio.html" class="menu__link">Портфоліо</a></li>
+              <li class="menu__iteam"><a href="#footer" class="menu__link">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="contacts header__contacts">
+          <li class="contacts__iteam">
+            <a href="mail:info@devstudio.com" class="contacts__link">
+              <svg class="contacts__icon" width="16px" height="12px">
+                <use href="./imges/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts__iteam">
+            <a href="tel:+380961111111" class="contacts__link">
+              <svg class="contacts__icon" width="10px" height="16px">
+                <use href="./imges/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
           <button type="button" class="mob-menu__open" data-menu-open>
             <svg width="24px" height="16px">
               <use href="./imges/symbol-defs.svg#icon-menu_24px"></use>
@@ -39,27 +64,21 @@
                 <use href="./imges/symbol-defs.svg#icon-close-black"></use>
               </svg>
             </button>
-            <nav class="nav header__nav">
-              <ul class="menu header__menu">
+            <nav class="nav">
+              <ul class="header__mob-menu">
                 <li class="mob-menu__iteam"><a href="./index.html" class="mob-menu__link mob-menu__link--current">Студія</a></li>
                 <li class="mob-menu__iteam"><a href="./portfolio.html" class="mob-menu__link">Портфоліо</a></li>
                 <li class="mob-menu__iteam"><a href="#footer" class="mob-menu__link">Контакти</a></li>
               </ul>
             </nav>
-            <ul class="contacts header__contacts">
+            <ul class="header__mob-contacts">
               <li class="mob-contacts__iteam">
                 <a href="mail:info@devstudio.com" class="mob-contacts__link">
-                  <!-- <svg class="mob-contacts__icon" width="16px" height="12px">
-                    <use href="./imges/symbol-defs.svg#icon-envelope"></use>
-                  </svg> -->
                   info@devstudio.com</a
                 >
               </li>
               <li class="mob-contacts__iteam">
                 <a href="tel:+380961111111" class="mob-contacts__link">
-                  <!-- <svg class="mob-contacts__icon" width="10px" height="16px">
-                    <use href="./imges/symbol-defs.svg#icon-smartphone"></use>
-                  </svg> -->
                   +38 096 111 11 11</a
                 >
               </li>
@@ -76,7 +95,7 @@
     </header>
     <!-- Унікальний контент сторінки -->
     <main class="main">
-      <!-- <section class="hero main__hero">
+      <section class="hero main__hero">
         <div class="container" data-modal-open>
           <h1 class="hero__title" data-aos="flip-right">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="bn hero__bn">Замовити послугу</button>
@@ -131,7 +150,7 @@
           </ul>
         </div>
       </section>
-      <section class="work">
+      <!-- <section class="work">
         <div class="container">
           <h2 class="work-title" data-aos="zoom-in-down">Чим ми займаємося</h2>
           <ul class="work-pic">
@@ -149,7 +168,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <section class="team">
         <div class="container">
           <h2 class="team-title" data-aos="zoom-in-down">Наша команда</h2>
@@ -157,7 +176,7 @@
             <li class="team-item">
               <img
                 src="./imges/member1.jpg"
-                width="270"
+                width="270px"
                 alt="посміхаючийся чоловік в окулярах з каштановим кольором волосся"
               />
               <div class="team-meta">
@@ -321,7 +340,7 @@
           </ul>
         </div>
       </section>
-      <section class="clients">
+      <!-- <section class="clients">
         <div class="container">
           <h2 class="clients-title" data-aos="zoom-in-down">Постійні клієнти</h2>
           <ul class="clients-list">
@@ -450,7 +469,7 @@
             </button>
           </form>
       </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-bn" data-modal-close>
@@ -495,13 +514,13 @@
           <div class="form-check">
             <input type="checkbox" name="checkbox" id="checkbox" class="check-input hidden" />
             <label for="checkbox" class="check-label">Погоджуюся з розсилкою та приймаю
-              <span><a href="#" class="checkbox-link">Умови договору</a></spa>
+              <span><a href="#" class="checkbox-link">Умови договору</a></span>
             </label>
           </div>
           <button type="submit" class="bn form-submit">Відправити</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
