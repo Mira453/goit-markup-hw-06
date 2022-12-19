@@ -4,30 +4,38 @@
     padding-bottom: 60px;
 }
 
-.footer__box {
-    display: flex;
-    flex-direction: column;
-      // justify-content: flex-start;
-    // align-items: baseline;
-}
+
 .footer__info-net {
     @media screen and (min-width: 768px) {
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}
+.footer__box {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 1200px) {
         flex-direction: row;
         justify-content: flex-start;
         align-items: baseline;
     }
 }
-.footer__information {
-    margin-right: 165px;
-}
 .footer-network {
-    // margin-left: 70px;
-}
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+    }
+    }
+    
 
 .footer__logo {
     display: flex;
     justify-content: center;
+    @media screen and (min-width: 1200px) {
+       justify-content: flex-start;
+    }
     margin-bottom: 20px;
 }
 
@@ -48,6 +56,9 @@
 .footer__map {
     display: flex;
     justify-content: center;
+    @media screen and (min-width: 1200px) {
+       justify-content: flex-start;
+    }
     color: #FFFFFF;
     @include font(400, null, 1.7143, null);
     // font-weight: 400;
@@ -63,6 +74,9 @@
 .footer__link {
     display: flex;
     justify-content: center;
+    @media screen and (min-width: 1200px) {
+       justify-content: flex-start;
+    }
     color: rgba(255, 255, 255, 0.6);
     @include font(400, null, 1.7143, null);
     text-decoration: none;
@@ -78,6 +92,9 @@
 .footer__text {
     display: flex;
     justify-content: center;
+    @media screen and (min-width: 1200px) {
+       justify-content: flex-start;
+    }
     color: #FFFFFF;
     @include font(700, 14px, 1.1429, 0.03em);
     // font-weight: 700;
@@ -92,6 +109,9 @@
 .footer__icons {
     display: flex;
     justify-content: center;
+    @media screen and (min-width: 1200px) {
+       justify-content: flex-start;
+    }
     gap: 10px;
     margin-bottom: 60px;
 }
@@ -122,8 +142,10 @@
 
 
 .footer__field {
-    // align-items: flex-end;
-    // margin-left: auto;
+    @media screen and (min-width: 1200px) {
+        align-items: flex-end;
+        margin-left: auto;
+    }
 }
 
 .field__email {
@@ -133,11 +155,11 @@
 .footer__label {
     display: flex;
     justify-content: center;
+    @media screen and (min-width: 1200px) {
+       justify-content: flex-start;
+    }
     font-family: Roboto;
     @include font(700, 14px, 1.1429, null);
-    // font-weight: 700;
-    // font-size: 14px;
-    // line-height: 1.1429;
     color: #FFFFFF;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -170,6 +192,9 @@
 .footer__button {
     display: flex;
     justify-content: center;
+    @media screen and (min-width: 1200px) {
+       justify-content: flex-start;
+    }
 }
 .footer__submit {
     display: flex;

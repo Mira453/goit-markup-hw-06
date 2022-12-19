@@ -26,12 +26,16 @@
     <!-- Шапка сторінки -->
     <header class="header">
       <div class="container header__container">
-        <a lang="en" href="./index.html" class="logo header__logo">Web<span class="logo__accent">Studio</span></a>
+        <a lang="en" href="./index.html" class="logo header__logo"
+          >Web<span class="logo__accent">Studio</span></a
+        >
         <nav class="header__nav">
           <ul class="menu header__menu">
-              <li class="menu__iteam"><a href="./index.html" class="menu__link menu__link--current">Студія</a></li>
-              <li class="menu__iteam"><a href="./portfolio.html" class="menu__link">Портфоліо</a></li>
-              <li class="menu__iteam"><a href="#footer" class="menu__link">Контакти</a></li>
+            <li class="menu__iteam">
+              <a href="./index.html" class="menu__link menu__link--current">Студія</a>
+            </li>
+            <li class="menu__iteam"><a href="./portfolio.html" class="menu__link">Портфоліо</a></li>
+            <li class="menu__iteam"><a href="#footer" class="menu__link">Контакти</a></li>
           </ul>
         </nav>
         <ul class="contacts header__contacts">
@@ -52,11 +56,11 @@
             >
           </li>
         </ul>
-          <button type="button" class="mob-menu__open" data-menu-open>
-            <svg width="24px" height="16px">
-              <use href="./imges/symbol-defs.svg#icon-menu_24px"></use>
-            </svg>
-          </button>
+        <button type="button" class="mob-menu__open" data-menu-open>
+          <svg width="24px" height="16px">
+            <use href="./imges/symbol-defs.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
         <div class="mob-menu is-hidden" data-menu>
           <div class="mob-menu__container">
             <button type="button" class="mob-menu__close" data-menu-close>
@@ -66,21 +70,23 @@
             </button>
             <nav class="nav">
               <ul class="header__mob-menu">
-                <li class="mob-menu__iteam"><a href="./index.html" class="mob-menu__link mob-menu__link--current">Студія</a></li>
-                <li class="mob-menu__iteam"><a href="./portfolio.html" class="mob-menu__link">Портфоліо</a></li>
-                <li class="mob-menu__iteam"><a href="#footer" class="mob-menu__link">Контакти</a></li>
+                <li class="mob-menu__iteam">
+                  <a href="./index.html" class="mob-menu__link mob-menu__link--current">Студія</a>
+                </li>
+                <li class="mob-menu__iteam">
+                  <a href="./portfolio.html" class="mob-menu__link">Портфоліо</a>
+                </li>
+                <li class="mob-menu__iteam">
+                  <a href="#footer" class="mob-menu__link">Контакти</a>
+                </li>
               </ul>
             </nav>
             <ul class="header__mob-contacts">
               <li class="mob-contacts__iteam">
-                <a href="mail:info@devstudio.com" class="mob-contacts__link">
-                  info@devstudio.com</a
-                >
+                <a href="mail:info@devstudio.com" class="mob-contacts__link"> info@devstudio.com</a>
               </li>
               <li class="mob-contacts__iteam">
-                <a href="tel:+380961111111" class="mob-contacts__link">
-                  +38 096 111 11 11</a
-                >
+                <a href="tel:+380961111111" class="mob-contacts__link"> +38 096 111 11 11</a>
               </li>
             </ul>
             <ul class="menu-soc">
@@ -134,7 +140,9 @@
                 </svg>
               </div>
               <h3 class="features__title">ПЛАНУВАННЯ</h3>
-              <p class="text feature__text">Так само консультація з широким активом значною мірою зумовлює.</p>
+              <p class="text feature__text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
             </li>
             <li class="features__item">
               <div class="features__box">
@@ -150,31 +158,48 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="work">
+      <section class="work">
         <div class="container">
           <h2 class="work-title" data-aos="zoom-in-down">Чим ми займаємося</h2>
           <ul class="work-pic">
             <li class="work-item">
-              <img src="./imges/box1.jpg" width="370" alt="людина яка набирає комп'ютерний код" />
+              <img
+                srcset="./imges/box1.jpg 370w, ./imges/1box2x.jpg 740w"
+                src="./imges/box1.jpg"
+                width="370"
+                class="work__img"
+                alt="людина яка набирає комп'ютерний код"
+              />
               <div class="work-addition"><p class="work-item text">Десктопні додатки</p></div>
             </li>
             <li class="work-item">
-              <img src="./imges/box2.jpg" width="370" alt="людина створює дизайн сайту" />
+              <img
+                srcset="./imges/box2.jpg 370w, ./imges/2box2x.jpg 740w"
+                src="./imges/box2.jpg"
+                width="370"
+                alt="людина створює дизайн сайту"
+              />
               <div class="work-addition"><p class="work-item text">Мобільні додатки</p></div>
             </li>
             <li class="work-item">
-              <img src="./imges/box3.jpg" width="370" alt="людина вибирає колір на планшеті" />
+              <img
+                srcset="./imges/box3.jpg 370w, ./imges/3box2x.jpg 740w"
+                src="./imges/box3.jpg"
+                width="370"
+                alt="людина вибирає колір на планшеті"
+              />
               <div class="work-addition"><p class="work-item text">Дизайнерські рішення</p></div>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <section class="team">
         <div class="container">
           <h2 class="team-title" data-aos="zoom-in-down">Наша команда</h2>
           <ul class="team-list">
             <li class="team-item">
               <img
+                srcset="./imges/member1.jpg 240w, ./imges/1member2x.jpg 540w"
                 src="./imges/member1.jpg"
                 width="270px"
                 alt="посміхаючийся чоловік в окулярах з каштановим кольором волосся"
@@ -216,6 +241,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./imges/member2.jpg 270w, ./imges/2member2x.jpg 540w"
                 src="./imges/member2.jpg"
                 width="270"
                 alt="посміхаючийся жінка в окулярах з світлим кольором волосся"
@@ -257,6 +283,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./imges/member3.jpg 270w, ./imges/3member2x.jpg 540w"
                 src="./imges/member3.jpg"
                 width="270"
                 alt="посміхаючийся чоловік з каштановим кольором волосся"
@@ -298,6 +325,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./imges/member4.jpg 270w, ./imges/4member2x.jpg 540w"
                 src="./imges/member4.jpg"
                 width="270"
                 alt="посміхаючийся чоловік з чорним кольором волосся"
@@ -452,26 +480,26 @@
             </ul>
           </div>
         </div>
-          <form class="footer__field">
-            <div class="field__email">
-              <p class="footer__label"> Підпишіться на розсилку </p>
-              <input
-                type="email"
-                name="footer-email"
-                id="user-email"
-                class="footer__input"
-                placeholder="E-mail"
-              />
-            </div>
-            <div class="footer__button">
-              <button type="submit" class="bn footer__submit">
-                Підписатися
-                <svg class="icon__sign" width="24px" height="24px">
-                  <use href="./imges/symbol-defs.svg#icon-icon-send"></use>
-                </svg>
-              </button>
-            </div>
-          </form>
+        <form class="footer__field">
+          <div class="field__email">
+            <p class="footer__label">Підпишіться на розсилку</p>
+            <input
+              type="email"
+              name="footer-email"
+              id="user-email"
+              class="footer__input"
+              placeholder="E-mail"
+            />
+          </div>
+          <div class="footer__button">
+            <button type="submit" class="bn footer__submit">
+              Підписатися
+              <svg class="icon__sign" width="24px" height="24px">
+                <use href="./imges/symbol-defs.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -517,7 +545,8 @@
 
           <div class="form-check">
             <input type="checkbox" name="checkbox" id="checkbox" class="check-input hidden" />
-            <label for="checkbox" class="check-label">Погоджуюся з розсилкою та приймаю
+            <label for="checkbox" class="check-label"
+              >Погоджуюся з розсилкою та приймаю
               <span><a href="#" class="checkbox-link">Умови договору</a></span>
             </label>
           </div>

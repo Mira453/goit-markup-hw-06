@@ -1,5 +1,8 @@
 .work {
     padding-bottom: 94px;
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
 }
 
 .work-title {
@@ -17,7 +20,6 @@
     /* width: calc((100% - 60px) / 3); */
     position: relative;
 }
-
 .work-addition {
     position: absolute;
     display: flex;

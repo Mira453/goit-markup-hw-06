@@ -698,6 +698,11 @@ img {
 .work {
   padding-bottom: 94px;
 }
+@media screen and (max-width: 1200px) {
+  .work {
+    display: none;
+  }
+}
 
 .work-title {
   font-size: 36px;
@@ -902,11 +907,6 @@ img {
   padding-bottom: 60px;
 }
 
-.footer__box {
-  display: flex;
-  flex-direction: column;
-}
-
 @media screen and (min-width: 768px) {
   .footer__info-net {
     display: flex;
@@ -916,10 +916,33 @@ img {
   }
 }
 
+.footer__box {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .footer__box {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-network {
+    margin-left: 70px;
+  }
+}
+
 .footer__logo {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    justify-content: flex-start;
+  }
 }
 
 .footer__accent {
@@ -945,6 +968,11 @@ img {
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1200px) {
+  .footer__map {
+    justify-content: flex-start;
+  }
+}
 .footer__map:hover, .footer__map:focus {
   color: var(--hover-color);
 }
@@ -957,6 +985,11 @@ img {
   line-height: 1.7143;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .footer__link {
+    justify-content: flex-start;
+  }
 }
 .footer__link:hover, .footer__link:focus {
   color: var(--hover-color);
@@ -974,12 +1007,22 @@ img {
   margin-top: 0;
   text-transform: uppercase;
 }
+@media screen and (min-width: 1200px) {
+  .footer__text {
+    justify-content: flex-start;
+  }
+}
 
 .footer__icons {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__icons {
+    justify-content: flex-start;
+  }
 }
 
 .footer-soc__iteam {
@@ -1005,6 +1048,13 @@ img {
   fill: #FFFFFF;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__field {
+    align-items: flex-end;
+    margin-left: auto;
+  }
+}
+
 .field__email {
   margin-right: 12px;
 }
@@ -1019,6 +1069,11 @@ img {
   color: #FFFFFF;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__label {
+    justify-content: flex-start;
+  }
 }
 
 .footer__input {
@@ -1054,6 +1109,11 @@ img {
 .footer__button {
   display: flex;
   justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__button {
+    justify-content: flex-start;
+  }
 }
 
 .footer__submit {
